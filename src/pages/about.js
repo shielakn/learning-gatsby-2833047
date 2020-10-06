@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import RobotImage from "../components/robotimage"
 
 const AboutPage = () => {
   return (
@@ -17,15 +16,14 @@ const AboutPage = () => {
       />
       <section>
         <h1>About this site</h1>
-        <RobotImage
-          src={"/images/bubbles-callout.png"}
-          alt={"Bubbles the Robot"}
-        />
-        <RobotImage src={"/images/dolly-callout.png"} alt={"Dolly the Robot"} />
-        <RobotImage
-          src={"/images/eileen-callout.png"}
-          alt={"Eileen the Robot"}
-        />
+        <figure>
+          <img
+            src="/images/bubbles-callout.png"
+            width="480"
+            height="440"
+            alt="Bubbles the Robot"
+          />
+        </figure>
         <div>
           <p>This is the first page I've created using Gatsby!</p>
           <p>
